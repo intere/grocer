@@ -86,6 +86,10 @@ module Grocer
       validate_payload rescue false
     end
 
+    def to_json
+      to_bytes[45..-1]
+    end
+
     private
 
     def encoded_payload

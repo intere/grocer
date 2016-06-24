@@ -4,6 +4,6 @@ module NotificationHelpers
   end
 
   def payload_bytes(notification)
-    notification.to_bytes[45..-1]
+    notification.to_json
   end
 end
